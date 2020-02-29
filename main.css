@@ -30,3 +30,10 @@
         .row > .cell:last-of-type{
             border-right: none;
         }
+.endgame{
+    width: 200px;
+    height: 100px;
+    background-color: lightseagreen;
+    margin-bottom: 100px;
+    display: hidden;
+}
