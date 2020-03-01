@@ -1,0 +1,111 @@
+.battery{
+    width: 300px;
+    height: 70px;
+    border: solid black;
+}
+    .bar{
+        width: 25%;
+        height: 100%;
+        float: left;
+        border: solid red;
+        background-color: lightseagreen;
+        opacity: 0;
+    }
+    #first{
+        animation-name: bar-1;
+        animation-duration: 4s;
+        animation-iteration-count: infinite;
+        animation-fill-mode: forwards;
+    }
+    #second{
+        animation-name: bar-2;
+        animation-duration: 4s;
+        animation-iteration-count: infinite;
+        animation-fill-mode: forwards;
+    }
+    #third{
+        animation-name: bar-3;
+        animation-duration: 4s;
+        animation-iteration-count: infinite;
+        animation-fill-mode: forwards;
+
+    }
+    #fourth{
+        animation-name: bar-4;
+        animation-duration: 4s;
+        animation-iteration-count: infinite;
+        animation-fill-mode: forwards;
+
+    }
+
+@keyframes bar-1{
+    0%{
+        opacity: 0;
+        background-color: none;
+    }
+    25%{
+        opacity: 1;
+        background-color: red;
+    }
+    50%{
+        background-color: orange;
+        opacity: 1;
+    }
+    75%{
+        background-color: yellow;
+        opacity: 1;
+    }
+    100%{
+        background-color: green;
+        opacity: 1;
+    }
+
+
+}
+@keyframes bar-2{
+    0%{
+    
+    }
+    25%{
+        opacity: 0;
+        background-color: none;
+    }
+    50%{
+        opacity: 1;
+        background-color: orange;
+    }
+    75%{
+        background-color: yellow;
+        opacity: 1;
+    }
+    100%{
+        background-color: green;
+        opacity: 1;
+    }
+}
+
+@keyframes bar-3{
+    50%{
+        background-color: none;
+        opacity: 0;
+    }
+    75%{
+        background-color: yellow;
+        opacity: 1;
+    }
+    100%{
+        background-color: green;
+        opacity: 1;
+    }
+}
+
+@keyframes bar-4{
+    75%{
+        opacity: 0;
+        background-color: none;
+    }
+    100%{
+        opacity: 1;
+        background-color: green;
+    }
+}
